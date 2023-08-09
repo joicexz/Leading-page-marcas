@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-rows: 100px 1fr 100px;
+}
+
+
+/* BARRA DE NAVEGAÇÃO */
+
+.header {
+    grid-area: header;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+
+.header img {
+    margin-left: 20px;
+    width: 80px;
+    height: 100px;
+    display: flex;
+
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-left: 380px;
+    align-items: center;
+    font-family: 'Bivoac Reguler', sans-serif;
+}
+
+.nav p{
+    border-bottom: 5px solid transparent;
+    transition: .5s;
+}
+
+.nav p:hover{
+    border-bottom: 5px solid white;
+}
+
+.entrar{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-left: 270px;
+    align-items: center;
+    font-family: 'Bivoac Reguler', sans-serif;
+
+}
+
+.entrar p{
+    border-bottom: 5px solid transparent;
+    transition: .5s;
+}
+
+.entrar p:hover{
+    border-bottom: 5px solid white;
+}
+
+
+/* CORPO DA PAGINA */
+.main {
+    grid-area: main;
+    width: 100%;
+    height: 100%;
+    background-image:url(img/fundo.png);
+    grid-template-areas: "esquerdo direito";
+    grid-template-columns: 650px 1fr;
+   
+}
+
+.esquerdo{
+    grid-area: esquerdo;
+    background-color: blue;
+}
+
+.direito{
+    grid-area: direito;
+    background-color: brown;
+}
+
+
+
+
+
+
+
+
+
+
+.footer {
+    grid-area: footer;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
