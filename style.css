@@ -7,7 +7,6 @@
 a {
     text-decoration: none;
     color: white;
-
 }
 
 body {
@@ -15,7 +14,7 @@ body {
     width: 100vw;
     height: 100vh;
     grid-template-areas: "header" "main" "footer";
-    grid-template-rows: 100px 1fr 80px;
+    grid-template-rows: 100px 1fr 100px;
 }
 
 
@@ -27,7 +26,6 @@ body {
     width: 100%;
     height: 100%;
     display: flex;
-
 }
 
 .header img {
@@ -35,7 +33,6 @@ body {
     width: 80px;
     height: 100px;
     display: flex;
-
 }
 
 .nav {
@@ -45,7 +42,6 @@ body {
     margin-left: 380px;
     align-items: center;
     font-family: 'Bivoac Reguler', sans-serif;
-
 }
 
 .nav p {
@@ -64,7 +60,6 @@ body {
     margin-left: 270px;
     align-items: center;
     font-family: 'Bivoac Reguler', sans-serif;
-
 }
 
 .entrar p {
@@ -86,20 +81,16 @@ body {
     grid-template-areas: "esquerdo direito";
     grid-template-columns: 780px 1fr;
     display: flex;
-    /* margin: 25px; */
-
 }
 
 /* LADO ESQUERDO */
 .esquerdo {
     grid-area: esquerdo;
-    /* background-color: blue; */
     width: 100%;
     height: 100%;
     margin-left: 130px;
     font-family: 'Vertexio', sans-serif;
     font-weight: bold;
-
 }
 
 .intro {
@@ -114,12 +105,12 @@ body {
 
 .intro u {
     color: rgba(221, 84, 84, 0.601);
-
 }
 
 .text {
     font-size: 20px;
     color: rgba(116, 21, 21, 0.863);
+    width: 200px;
 }
 
 .text:hover {
@@ -134,7 +125,6 @@ body {
     display: flex;
     gap: 8px;
     justify-content: end;
-
 }
 
 .quadrado img {
@@ -145,7 +135,6 @@ body {
 /* LADO DIREITO */
 .direito {
     grid-area: direito;
-    /* background-color: brown; */
     width: 100%;
     height: 500px;
 }
@@ -154,11 +143,11 @@ body {
     display: flex;
     height: 430px;
     margin-left: 85px;
-    margin-top: 45px;
+    margin-top: 20px;
 }
 
 
-.roxo {
+.azul {
     height: 500px;
     display: flex;
     position: relative;
@@ -171,5 +160,31 @@ body {
     grid-area: footer;
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: #F5F5F5;
+}
+
+.footer h3 {
+    font-family: 'Vertexio', sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.footer hr {
+    border: 0px;
+    height: 7px;
+    background: black;
+    margin-bottom: 2px;
+}
+
+.marcas {
+    width: 100%;
+    height: 55%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer img {
+    height: 80%;
 }
